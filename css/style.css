@@ -1,0 +1,44 @@
+:root {
+    --color-body-background: #333333;
+    --color-digital-watch: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-digital-watch);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: var(--color-body-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 20em;
+    min-height: 7em;
+    border: 3px solid var(--color-digital-watch);
+    border-radius: 1em;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch {
+    font-size: 4em;
+}
+
+@media (min-width: 200px) and (max-width: 325px) {
+    .container {
+        min-width: 15em;
+    }
+
+    .watch {
+        font-size: 3em;
+    }
+}
