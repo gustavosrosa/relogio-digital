@@ -32,3 +32,13 @@ body {
 .watch {
     font-size: 4em;
 }
+
+@media (min-width: 200px) and (max-width: 325px) {
+    .container {
+        min-width: 15em;
+    }
+
+    .watch {
+        font-size: 3em;
+    }
+}
