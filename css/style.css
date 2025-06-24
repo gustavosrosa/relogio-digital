@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--color-digital-watch);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -27,13 +28,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Impact, sans-serif;
 }
 
 .watch {
     font-size: 4em;
 }
 
-@media (min-width: 200px) and (max-width: 325px) {
+.branding-area {
+    font-family: sans-serif;
+    font-size: .75em;
+    margin-top: 1em;
+}
+
+@media (min-width: 250px) and (max-width: 325px) {
     .container {
         min-width: 15em;
     }
